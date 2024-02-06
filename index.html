@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website - Roshan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="icon" href="./images/logo.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo-container">
+            <img src="logo1.png" alt="logo" class="logo" />
+            <div class="logo-text">
+              <h5>oshan</h5>
+            </div>
+          </div>
+
+          <div class="nav-items" id="sidemenu">
+            <i class="ri-close-line" onclick="closeMenu()"></i>
+            <div style="--i: 1"><a href="#home">Home</a></div>
+            <div style="--i: 2"><a href="#about">About</a></div>
+            <div style="--i: 3"><a href="#skills">Skills</a></div>
+            <div style="--i: 4"><a href="#projects">Projects</a></div>
+            <div style="--i: 5"><a href="#contact">Contact</a></div>
+          </div>
+          <i class="ri-menu-line" onclick="openMenu()"></i>
+        </div>
+      </div>
+    </div>
+    <section id="home">
+      <div class="home-all">
+        <div class="home-sci">
+          <div>
+            <a
+              class="git-btn"
+              href="https://github.com/tapreroshan"
+              target="_blank"
+            >
+              <i class="ri-github-line"></i
+            ></a>
+          </div>
+          <div>
+            <a
+              class="git-btn"
+              href="https://www.linkedin.com/in/roshan-tapre-3178a9257/"
+              target="_blank"
+            >
+              <i class="ri-linkedin-box-fill"></i>
+            </a>
+          </div>
+          <div>
+            <a
+              class="git-btn"
+              href="https://www.instagram.com/roshan.tapare.9/"
+              target="_blank"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+          </div>
+        </div>
+        <div class="home-content">
+          <h1>Hi, I'm <span>Roshan Tapre</span></h1>
+          <h3><span>Python </span> Developer</h3>
+
+          <p>
+            Driven DSA Intern with a passion for Python and foundational data structures.
+             Proven ability in solving complex problems through logical thinking.
+              Proficient in implementing algorithms, specializing in sorting techniques and recursion. 
+              Eager to make impactful contributions in a tech-centric environment. 
+            Excited about continuous learning and growth in the field of data structures and algorithms.
+          </p>
+          <button onclick="window.open('#contact')" class="button">
+            Hire Me!
+            <div class="hoverEffect">
+              <div></div>
+            </div>
+          </button>
+        </div>
+        <div class="home-img">
+          <div class="glowing-circle">
+            <span></span>
+            <span></span>
+            <div class="image">
+              <img src="profil_photo.png" alt="Roshan_profil" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container-2">
+        <div class="row">
+          <h1>About</h1>
+          <p>
+            Hello! 👋 I'm <span>Roshan Tapre</span>,Asspiring Pyhton Developer.
+            ALawys learning new to creating.My journey into the world of tech has been 
+            fueled by a deep curiosity for problem-solving and a love for Python.
+
+          <a
+            href="Resume.pdf"
+            class="Download-button"
+            download="Roshan Tapre Resume"
+            ><i class="ri-download-cloud-2-line"></i
+            ><span>Download Resume</span></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container-3 row container-2">
+        <div class="heading"><h1>Skills</h1></div>
+
+        <div class="all-skills">
+          <div class="circle-skill">
+            <img src="python-logo.png" alt="python-logo" />
+          </div>
+          <div class="circle-skill">
+            <img src="html-logo.png" alt="html-logo" />
+          </div>
+          <div class="circle-skill">
+            <img src="css-logo.png" alt="css-logo" />
+          </div>
+          <div class="circle-skill">
+            <img src="c++logo.png" alt="" />
+          </div>
+        </div>
+
+        <!-- <div class="all-skills">
+          <div class="circle-skill">
+            <img src="./images/react-logo.png" alt="" />
+          </div>
+          <div class="circle-skill">
+            <img src="python-logo.png" alt="" />
+          </div>
+          <div class="circle-skill">
+            <img src="./images/dsa.png" alt="" />
+          </div>
+        </div> -->
+
+        <div class="heading"><h1>Tools</h1></div>
+
+        <div class="all-skills">
+          <!-- <div class="circle-skill">
+            <img src="./images/netbean.jpg" alt="" />
+          </div> -->
+          <div class="circle-skill">
+            <img src="chatgpt-logo.png" alt="chatgpt-logo" />
+          </div>
+          <div class="circle-skill">
+            <img src="git-logo.png" alt="git-logo" />
+          </div>
+          <div class="circle-skill">
+            <img src="vs-code.png" alt="vs-code" />
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container-4">
+        <div class="heading"><h1>Projects</h1></div>
+        <div class="project-list">
+          <div class="work">
+            <img src="project-1.png" alt="" />
+            <div class="layer">
+              <h3>Rate in Maze</h3>
+              <h4>Finding best path</h4>
+              <p>
+                Dive into the world of Python with this maze generator and solver project. 
+                The program creates random mazes, where users navigate a rat to find the cheese.
+                 Featuring colorful console graphics, it reflects my coding skills in algorithmic problem-solving and interactive design.
+                 This project not only offers entertainment but also highlights my ability to create engaging and visually pleasing applications.
+              </p>
+              <a
+                target="_blank"
+                href="https://github.com/tapreroshan/Rate_in_Maze/blob/main/rate_maze_game.py"
+              >
+                <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="project2.png" alt="" />
+            <div class="layer">
+              <h3>Simple GUI calander using Python</h3>
+              <p>
+                Created an attractive GUI calendar in Python.
+                 In this project, Python tkinter and tkcalendar libraries are used.
+                  Multiple colors from the tkinter library are utilized to enhance the visual appeal.
+
+
+              </p>
+              <a
+                target="_blank"
+                href="https://github.com/tapreroshan/-PROJECT-2-GUI-CALENDER-/blob/main/project2.py"
+              >
+                <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a class="btn" href="#projects">See More</a>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="heading"><h1>Contact Us</h1></div>
+      <div class="contai-ner">
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon"><i class="ri-map-pin-line"></i></div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>
+                Hingoli,<br />
+                Maharashtra<br />423110
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="ri-phone-line"></i></div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+91-860202640</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="ri-mail-send-line"></i></div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>roshantapre666@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form name="submit-to-google-sheet">
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <input type="text" name="Name" id="" required="required" />
+              <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="Email" id="" required="required" />
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea name="Message" required="required" id=""></textarea>
+              <span>Type Your Message...</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="" id="" value="Send" />
+              <span></span>
+            </div>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<script>
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbyd0g3R53jiMxIrxrVqQIMr2nLlq4cEWx_i6LTQhm-2Gvh_Xaccvf7eG3PYZIc2DlQ9/exec";
+  const form = document.forms["submit-to-google-sheet"];
+
+  const msg = document.getElementById("msg");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        msg.innerHTML="Message sent Successfully!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },1000)
+        form.reset()
+      })
+      .catch((error) => console.error("Error!", error.message));
+  });
+</script>
+<script src="script.js"></script>
